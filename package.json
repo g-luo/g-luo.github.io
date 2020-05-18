@@ -2,7 +2,7 @@
   "author": {
     "name": "Grace Luo",
     "email": "graceluo@berkeley.edu",
-    "url": "https://graceluo.me"
+    "url": "https://g-luo.github.io/"
   },
   "homepage": "https://g-luo.github.io/",
   "files": [
@@ -21,13 +21,11 @@
   ],
   "scripts": {
     "build-sass": "node-sass --output-style expanded --source-map true bulma.sass css/bulma.css",
-    "deploy": "gh-pages -b master -d build"
   },
   "devDependencies": {
     "node-sass": "^4.14.1"
   },
   "dependencies": {
-    "gh-pages": "^2.2.0",
     "lit-element": "^2.3.1"
   }
 }
