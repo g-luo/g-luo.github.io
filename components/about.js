@@ -1,6 +1,5 @@
-import {LitElement, html} from 'lit-element';
+import {LitElement, html} from 'https://unpkg.com/@polymer/lit-element/lit-element.js?module';
 
-// Static navbar on the left side of every page
 export class About extends LitElement { 
 	render() {
     	return html`
@@ -22,7 +21,6 @@ export class About extends LitElement {
                   </div>
                 </article>
             </div>
-            <object width="300" height="200" style="float:right;" type="image/svg+xml" data="../assets/multi_koi.svg"></object>
         </section>
     `	;
   	}
