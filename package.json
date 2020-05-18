@@ -20,7 +20,7 @@
     "eecs"
   ],
   "scripts": {
-    "build-sass": "node-sass --output-style expanded --source-map true bulma.sass css/bulma.css",
+    "build-sass": "node-sass --output-style expanded --source-map true bulma.sass css/bulma.css"
   },
   "devDependencies": {
     "node-sass": "^4.14.1"
