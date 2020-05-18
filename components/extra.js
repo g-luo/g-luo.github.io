@@ -33,7 +33,7 @@ export class Extra extends LitElement {
                         <img src="../assets/extra/ddr.png">
                     </div>
                     <div class="card-content">
-                      I organized <a href="https://www.facebook.com/events/503957350183653/permalink/509203489659039/" target="_blank">Dance Dance Revolution event</a> and <a href="https://www.facebook.com/events/2331334813564763/" target="_blank">Plushie Making Event</a> with HKN.
+                      I organized a <a href="https://www.facebook.com/events/503957350183653/permalink/509203489659039/" target="_blank">Dance Dance Revolution event</a> and <a href="https://www.facebook.com/events/2331334813564763/" target="_blank">Plushie Making Event</a> with HKN.
                     </div>
                 </div>
               </div>
