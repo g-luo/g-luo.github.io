@@ -9927,12 +9927,9 @@ label.panel-block:hover {
   cursor: url(../assets/koi.png), auto;
 }
 
-.app-container-content {
-  padding-left: 100px;
-}
-
 @media (min-width: 992px) {
   .app-container-content {
+    padding-left: 100px;
     height: 100vh;
     overflow: scroll;
     padding-bottom: 300px;
