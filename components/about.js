@@ -1,4 +1,4 @@
-import {LitElement, html} from '../node_modules/lit-element';
+import {LitElement, html} from 'lit-element';
 
 // Static navbar on the left side of every page
 export class About extends LitElement { 
