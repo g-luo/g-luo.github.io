@@ -1,0 +1,30 @@
+{
+  "author": {
+    "name": "Grace Luo",
+    "email": "graceluo@berkeley.edu",
+    "url": "https://graceluo.me"
+  },
+  "files": [
+    "css",
+    "sass",
+    "bulma.sass",
+    "LICENSE",
+    "README.md"
+  ],
+  "keywords": [
+    "css",
+    "sass",
+    "flexbox",
+    "responsive",
+    "framework"
+  ],
+  "scripts": {
+    "build-sass": "node-sass --output-style expanded --source-map true bulma.sass css/bulma.css"
+  },
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  },
+  "dependencies": {
+    "lit-element": "^2.3.1"
+  }
+}

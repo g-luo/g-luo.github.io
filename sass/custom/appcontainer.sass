@@ -1,0 +1,22 @@
+$desktop: 992px
+$padding: 100px
+
+.noscroll
+	@media(min-width: $desktop)
+		height: 100vh
+		overflow: hidden
+
+.app-container 
+	padding: $padding
+	cursor: url(../assets/koi.png), auto;
+
+.app-container-content 
+	padding-left: $padding
+	@media(min-width: $desktop)
+		height: 100vh
+		overflow: scroll
+		padding-bottom: $padding * 3
+
+ &::-webkit-scrollbar
+    height: 0;
+    width: 0;
