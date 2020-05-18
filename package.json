@@ -21,12 +21,13 @@
   ],
   "scripts": {
     "build-sass": "node-sass --output-style expanded --source-map true bulma.sass css/bulma.css",
-    "serve": "es-dev-server --app-index index.html --node-resolve --watch --open"
+    "deploy": "gh-pages -b master -d build"
   },
   "devDependencies": {
     "node-sass": "^4.14.1"
   },
   "dependencies": {
+    "gh-pages": "^2.2.0",
     "lit-element": "^2.3.1"
   }
 }
