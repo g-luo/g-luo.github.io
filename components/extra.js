@@ -1,4 +1,4 @@
-import {LitElement, html} from 'lit-element';
+import {LitElement, html} from 'https://unpkg.com/@polymer/lit-element/lit-element.js?module';
 
 // Static navbar on the left side of every page
 export class Extra extends LitElement { 
