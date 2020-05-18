@@ -13,18 +13,17 @@
     "README.md"
   ],
   "keywords": [
-    "css",
-    "sass",
-    "flexbox",
-    "responsive",
-    "framework"
+    "grace",
+    "luo",
+    "berkeley",
+    "computer science",
+    "eecs"
   ],
   "scripts": {
     "build-sass": "node-sass --output-style expanded --source-map true bulma.sass css/bulma.css",
     "serve": "es-dev-server --app-index index.html --node-resolve --watch --open"
   },
   "devDependencies": {
-    "es-dev-server": "^1.50.6",
     "node-sass": "^4.14.1"
   },
   "dependencies": {
