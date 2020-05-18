@@ -4,6 +4,7 @@
     "email": "graceluo@berkeley.edu",
     "url": "https://graceluo.me"
   },
+  "homepage": "https://g-luo.github.io/",
   "files": [
     "css",
     "sass",
@@ -19,9 +20,11 @@
     "framework"
   ],
   "scripts": {
-    "build-sass": "node-sass --output-style expanded --source-map true bulma.sass css/bulma.css"
+    "build-sass": "node-sass --output-style expanded --source-map true bulma.sass css/bulma.css",
+    "serve": "es-dev-server --app-index index.html --node-resolve --watch --open"
   },
   "devDependencies": {
+    "es-dev-server": "^1.50.6",
     "node-sass": "^4.14.1"
   },
   "dependencies": {
