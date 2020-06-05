@@ -1,4 +1,4 @@
-import {LitElement, html} from 'https://www.jsdelivr.com/package/npm/@polymer/lit-element';
+import {LitElement, html} from 'https://unpkg.com/lit-element/lit-element.js?module';
 
 export class Extra extends LitElement { 
 	render() {
