@@ -1,4 +1,4 @@
-import {LitElement, html} from 'https://cdn.pika.dev/lit-element';
+import {LitElement, html} from 'https://www.jsdelivr.com/package/npm/@polymer/lit-element';
 
 // Static navbar on the left side of every page
 export class Sidebar extends LitElement { 

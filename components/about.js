@@ -1,4 +1,4 @@
-import {LitElement, html} from 'https://cdn.pika.dev/lit-element';
+import {LitElement, html} from 'https://www.jsdelivr.com/package/npm/@polymer/lit-element';
 
 export class About extends LitElement { 
 	render() {
