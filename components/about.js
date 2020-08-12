@@ -1,9 +1,9 @@
-import {LitElement, html} from 'https://unpkg.com/@polymer/lit-element/lit-element.js?module';
+import {LitElement, html} from '../node_modules/@polymer/lit-element/lit-element.js';
 
 export class About extends LitElement { 
 	render() {
     	return html`
-        <link rel="stylesheet" href="./css/bulma.css">
+        <link rel="stylesheet" href="../css/bulma.css">
         <section class="section">
           <div class="has-text-weight-medium is-size-3" id="about">About</div>
             <div class="content is-size-6">

@@ -1,10 +1,10 @@
-import {LitElement, html} from 'https://unpkg.com/@polymer/lit-element/lit-element.js?module';
+import {LitElement, html} from '../node_modules/@polymer/lit-element/lit-element.js';
 
 // Static navbar on the left side of every page
 export class Sidebar extends LitElement { 
 	render() {
     	return html`
-        <link rel="stylesheet" href="./css/bulma.css">
+        <link rel="stylesheet" href="../css/bulma.css">
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <div>
