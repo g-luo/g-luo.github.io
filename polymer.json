@@ -1,0 +1,15 @@
+{
+  "npm": true,
+  "moduleResolution": "node",
+  "entrypoint": "index.html",
+  "extraDependencies": [
+    "node_modules/@webcomponents/webcomponentsjs/**"
+  ],
+  "builds": [{
+	  "name": "alphabuild",
+	  "bundle": true,
+	  "js": {
+	    "minify": true
+	  }
+	}]
+}
