@@ -7,9 +7,9 @@
   ],
   "builds": [{
 	  "name": "alphabuild",
-	  "bundle": true,
+	  "bundle": false,
 	  "js": {
-	    "minify": true
+	    "minify": false
 	  }
 	}]
 }
