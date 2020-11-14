@@ -9,12 +9,11 @@ export class About extends LitElement {
               <article class="message is-dark">
                  <div class="message-body">
                     Hi, I'm Grace!
-                    
-                    <br><br>For the past two years, I've been working on <a href="https://www.berkeleytime.com/landing" target="_blank">Berkeleytime</a>, a course discovery tool with over 26k monthly users. UC Berkeley is a large public school, and we work hard to make our site accessible with a public API, extensive user research, and a simple UI.
+                    <br><br> Currently I'm working on multimodal vision and language research 
+                    (ie models that can understand both image and text).
+                    <br><br>For the past two years, I've also been working on <a href="https://www.berkeleytime.com/landing" target="_blank">Berkeleytime</a>, a course discovery tool with over 26k monthly users. UC Berkeley is a large public school, and we work hard to make our site accessible with a public API, extensive user research, and a simple UI.
                     <br><br>
                     As <a href="https://asuc.org/appointed-officials/" target="_blank">Chief Technology Officer</a>, I work on securing funding pipelines, sourcing new projects, and managing existing pro bono tech for Berkeley students.
-                    <br><br>
-                    Last summer, I worked on an AI + healthcare demo at <a href="https://www.intel.com/content/www/us/en/healthcare-it/transforming-healthcare.html" target="_blank">Intel</a> and this summer I will be interning at <a href="https://www.google.com/" target="_blank">Google</a>.
                     <br><br>
                     <i>*EECS = Electrical Engineering & Computer Science</i>
                   </div>
