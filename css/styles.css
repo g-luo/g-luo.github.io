@@ -1,0 +1,37 @@
+section {
+  padding: 40px 0;
+}
+
+img {
+  border-radius: 3px;
+}
+
+.app-container {
+  padding: 50px 100px 100px 100px;
+}
+
+.description {
+  padding-bottom: 10px;
+}
+
+.project-links {
+  max-width: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#research {
+  background-color: #EFEFEF;
+  position: relative;
+  display: grid;
+}
+
+#research:before {
+  content:"";
+  background-color: #EFEFEF;
+  position: absolute;
+  height: 100%;
+  width: 200vw;
+  left: -100vw;
+  z-index: -1;
+}
