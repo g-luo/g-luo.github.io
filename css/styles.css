@@ -1,3 +1,7 @@
+a {
+  color: #628ea7ff;
+}
+
 section {
   padding: 40px 0;
 }
@@ -7,7 +11,7 @@ img {
 }
 
 .app-container {
-  padding: 50px 100px 100px 100px;
+  max-width: 80%;
 }
 
 .description {
@@ -20,15 +24,21 @@ img {
   justify-content: space-between;
 }
 
+.project-links-pair {
+  max-width: 130px;
+  display: flex;
+  justify-content: space-between;
+}
+
 #research {
-  background-color: #EFEFEF;
+  background-color: #f3f3f3ff;
   position: relative;
   display: grid;
 }
 
 #research:before {
   content:"";
-  background-color: #EFEFEF;
+  background-color: #f3f3f3ff;
   position: absolute;
   height: 100%;
   width: 200vw;
