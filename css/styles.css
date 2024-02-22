@@ -1,5 +1,17 @@
+body {
+  font-family: 'Noto Sans', sans-serif !important;
+}
+
 a {
   color: #628ea7ff;
+}
+a:hover {
+  color: #f8b364ff;
+  text-decoration: none;
+}
+a:active {
+  color: #f8b364ff;
+  text-decoration: none;
 }
 
 section {
@@ -19,26 +31,17 @@ img {
 }
 
 .project-links {
-  max-width: 200px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.project-links-pair {
-  max-width: 130px;
-  display: flex;
-  justify-content: space-between;
 }
 
 #research {
-  background-color: #f3f3f3ff;
+  background-color: #fafafaff;
   position: relative;
   display: grid;
 }
 
 #research:before {
   content:"";
-  background-color: #f3f3f3ff;
+  background-color: #fafafaff;
   position: absolute;
   height: 100%;
   width: 200vw;
