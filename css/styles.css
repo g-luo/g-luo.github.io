@@ -71,3 +71,15 @@ img,video {
 .fun-fact-text {
   line-height: 1.4;
 }
+
+.hover-image img {
+  grid-area: 1/1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 3s;
+}
+.hover-image{display:grid;} 
+.hover-image img:last-child{opacity:0;}
+.hover-image:hover img:first-child{opacity:0;}
+.hover-image:hover img:last-child{opacity:1;}
