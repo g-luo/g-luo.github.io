@@ -41,6 +41,55 @@ img,video {
 .project-links {
 }
 
+.project-filter .button {
+  font-family: 'Noto Sans', sans-serif !important;
+  font-size: 0.8rem;
+  border-radius: 4px;
+  border-color: #628ea7;
+}
+
+.project-filter .button:focus,
+.project-filter .button:active,
+.project-filter .button.is-info:focus,
+.project-filter .button.is-info.is-focused,
+.project-filter .button.is-selected:focus,
+.project-filter .button.is-selected:active,
+.project-filter .button:focus:not(:active),
+.project-filter .button.is-info:focus:not(:active) {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.project-filter .button.is-selected,
+.project-filter .button.is-info {
+  background-color: #628ea7;
+  border-color: #628ea7;
+  color: #fff;
+}
+
+.project-filter .button.is-selected:hover,
+.project-filter .button.is-info:hover {
+  background-color: #547a94;
+  border-color: #547a94;
+  color: #fff;
+}
+
+.project-filter .button:not(.is-selected):not(.is-info) {
+  background-color: transparent;
+  color: #628ea7;
+}
+
+.project-filter .button:not(.is-selected):not(.is-info):hover {
+  background-color: rgba(98, 142, 167, 0.1);
+  color: #628ea7;
+}
+
+.project-item[style*="display: none"] {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
 #research {
   background-color: #fafafaff;
   position: relative;

@@ -61,8 +61,68 @@
     <div class="description">
       (*) denotes equal contribution
     </div>
+    <div class="project-filter buttons has-addons" style="margin-bottom: 1rem;">
+      <button type="button" class="button is-small is-info is-selected" data-filter="selected">Selected Projects</button>
+      <button type="button" class="button is-small" data-filter="all">All Projects</button>
+    </div>
+    <!-- GLP -->
+    <div class="columns project-item" data-tags="selected">
+      <div class="column is-2">
+        <figure class="image">
+          <img src="assets/projects/teasers/glp.png"></img>
+        </figure>
+      </div>
+      <div class="column">
+        <div class="is-size-6"><b>Learning a Generative Meta-Model of LLM Activations</b></div>
+        <b>Grace Luo</b>, Jiahai Feng, Trevor Darrell, Alec Radford, Jacob Steinhardt
+        <br/>
+        arXiv 2026
+        <div class="project-links">
+          <a href="https://arxiv.org/abs/2602e.06964" target="_blank">
+          paper
+          </a>
+          /
+          <a href="https://generative-latent-prior.github.io" target="_blank">
+          website
+          </a>
+          /
+          <a href="https://github.com/g-luo/generative_latent_prior" target="_blank">
+          code
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- GLP -->
+    <!-- ECHO -->
+    <div class="columns project-item" data-tags="">
+      <div class="column is-2">
+        <figure class="image">
+          <img src="assets/projects/teasers/echo.jpg"></img>
+        </figure>
+      </div>
+      <div class="column">
+        <div class="is-size-6"><b>Constantly Improving Image Models Need Constantly Improving Benchmarks</b></div>
+        Jiaxin Ge*, <b>Grace Luo*</b>, Heekyung Lee, Nishant Malpani, Long Lian, XuDong Wang, Aleksander Holynski, Trevor Darrell, Sewon Min, David M. Chan
+        <br/>
+        ICLR 2026
+        <div class="project-links">
+          <a href="https://arxiv.org/abs/2510.15021" target="_blank">
+          paper
+          </a>
+          /
+          <a href="https://echo-bench.github.io" target="_blank">
+          website
+          </a>
+          /
+          <a href="https://github.com/para-lost/ECHO" target="_blank">
+          code
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- ECHO -->
     <!-- Dual-Process Image Gen -->
-    <div class="columns">
+    <div class="columns project-item" data-tags="selected">
       <div class="column is-2">
         <figure class="image">
           <video autoplay="" muted="" playsinline="" loop="">
@@ -92,7 +152,7 @@
     </div>
     <!-- Dual-Process Image Gen -->
     <!-- VLM Cross Modal Reps -->
-    <div class="columns">
+    <div class="columns project-item" data-tags="selected">
       <div class="column is-2">
         <figure class="image">
           <img src="assets/projects/teasers/tvacm.png"></img>
@@ -120,7 +180,7 @@
     </div>
     <!-- VLM Cross Modal Reps -->
     <!-- Readout Guidance -->
-    <div class="columns">
+    <div class="columns project-item" data-tags="selected">
       <div class="column is-2">
         <figure class="image">
           <video autoplay="" muted="" playsinline="" loop="">
@@ -150,7 +210,7 @@
     </div>
     <!-- Readout Guidance -->
     <!-- Diffusion Hyperfeatures -->
-    <div class="columns">
+    <div class="columns project-item" data-tags="selected">
       <div class="column is-2">
         <figure class="image">
           <img src="assets/projects/teasers/dhf.png"></img>
@@ -178,7 +238,7 @@
     </div>
     <!-- Diffusion Hyperfeatures -->
     <!-- Shape Guided Diffusion -->
-    <div class="columns">
+    <div class="columns project-item" data-tags="">
       <div class="column is-2">
         <figure class="image">
           <img src="assets/projects/teasers/sgd.png"></img>
@@ -206,7 +266,7 @@
     </div>
     <!-- Shape Guided Diffusion -->
     <!-- Geolocation via Guidebook Grounding -->
-    <div class="columns">
+    <div class="columns project-item" data-tags="">
       <div class="column is-2">
         <figure class="image">
           <img src="assets/projects/teasers/g3.png"></img>
@@ -234,7 +294,7 @@
     </div>
     <!-- Geolocation via Guidebook Grounding -->
     <!-- Twitter COMMs -->
-    <div class="columns">
+    <div class="columns project-item" data-tags="">
       <div class="column is-2">
         <figure class="image">
           <img src="assets/projects/teasers/twitter_comms.png"></img>
@@ -261,7 +321,7 @@
     </div>
     <!-- Twitter COMMs -->
     <!-- NewsCLIPpings -->
-    <div class="columns">
+    <div class="columns project-item" data-tags="">
       <div class="column is-2">
         <figure class="image">
           <img src="assets/projects/teasers/news_clippings.png"></img>
@@ -362,6 +422,39 @@
     © Grace Luo 2020. All rights reserved.
   </footer>
 </div>
+
+<script>
+(function () {
+  var filterButtons = document.querySelectorAll('.project-filter [data-filter]');
+  var projectItems = document.querySelectorAll('.project-item');
+  if (!filterButtons.length || !projectItems.length) return;
+
+  function applyFilter(filter) {
+    filterButtons.forEach(function (btn) {
+      var isActive = btn.getAttribute('data-filter') === filter;
+      btn.classList.toggle('is-info', isActive);
+      btn.classList.toggle('is-selected', isActive);
+    });
+    projectItems.forEach(function (item) {
+      var tags = (item.getAttribute('data-tags') || '').trim();
+      var hasSelected = tags.split(/\s+/).indexOf('selected') >= 0;
+      if (filter === 'selected') {
+        item.style.display = hasSelected ? '' : 'none';
+      } else {
+        item.style.display = '';
+      }
+    });
+  }
+
+  filterButtons.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      applyFilter(this.getAttribute('data-filter'));
+    });
+  });
+
+  applyFilter('selected');
+})();
+</script>
 
 </body>
 </html>
