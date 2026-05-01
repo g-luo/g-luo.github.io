@@ -18,8 +18,10 @@
   <link rel="shortcut icon" href="assets/icon.png" type="image/x-icon">
   <!-- Bulma Version 0.8.x-->
   <link rel="stylesheet" href="./css/bulma.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap">
   <link rel="stylesheet" href="./css/styles.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap">
 </head>
 <body>
 
@@ -31,23 +33,31 @@
         <div class="is-size-3"><b>Grace Luo</b></div>
         <div class="spacer"></div>
         <div class="description">
-          I am a PhD student at <a href="https://bair.berkeley.edu" target="_blank">BAIR</a> advised by <a href="https://darrellgroup.github.io" target="_blank">Professor Trevor Darrell</a>. Previously, I received my B.S. and M.S. degrees in <a href="https://eecs.berkeley.edu" target="_blank">EECS at UC Berkeley</a> in 2021 and 2022 respectively.
-          <div class="spacer"></div>
-          I work on interpreting and controlling generative models, e.g., for image synthesis and vision-language understanding.
-          <div class="spacer"></div>
+          I'm a final-year PhD student at <a href="https://bair.berkeley.edu" target="_blank">BAIR</a> advised by <a href="https://darrellgroup.github.io" target="_blank">Professor Trevor Darrell</a>. Before that, I received my B.S. and M.S. degrees in <a href="https://eecs.berkeley.edu" target="_blank">EECS at UC Berkeley</a>.
         </div>
         <div>
-          <a href="mailto:graceluo@berkeley.edu" target="_blank">Email</a> /
-          <a href="https://scholar.google.com/citations?user=j88h_roAAAAJ&hl=en&oi=ao" target="_blank">Google Scholar</a> /
-          <a href="https://github.com/g-luo" target="_blank">Github</a> / 
-          <a href="https://x.com/graceluo_" target="_blank">Twitter</a>
+          During my PhD, I studied the representations of generative models, across vision and language. For example, I've worked on <a href="https://diffusion-hyperfeatures.github.io" target="_blank">re-purposing image generators</a> for computer vision tasks, and <a href="https://generative-latent-prior.github.io" target="_blank">meta-modeling language activations</a> for better LLM interpretability and control.
         </div>
       </div>
-      <div class="column is-one-quarter">
+      <div class="column is-one-quarter" style="padding-top: 3rem;">
         <figure class="image hover-image">
           <img src="./assets/profile.jpeg">
           <img src="./assets/icon.png">
         </figure>
+        <div class="profile-links">
+          <a href="mailto:graceluo@berkeley.edu" target="_blank" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          </a>
+          <a href="https://scholar.google.com/citations?user=j88h_roAAAAJ&hl=en&oi=ao" target="_blank" aria-label="Google Scholar">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zM5.18 9 12 5.28 18.82 9 12 12.72 5.18 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/></svg>
+          </a>
+          <a href="https://github.com/g-luo" target="_blank" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.4 3-.405 1.02.005 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          </a>
+          <a href="https://x.com/graceluo_" target="_blank" aria-label="X / Twitter">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -58,15 +68,17 @@
 <section class="section" id="research">
   <div class="app-container container is-max-desktop">
     <div class="is-size-5"><b>Research</b></div>
-    <div class="description">
-      (*) denotes equal contribution
+    <div class="project-toggle" role="tablist" aria-label="Project filter">
+      <span class="project-toggle-thumb" aria-hidden="true"></span>
+      <button type="button" class="project-toggle-option is-active" data-filter="selected" role="tab" aria-selected="true">Selected</button>
+      <button type="button" class="project-toggle-option" data-filter="all" role="tab" aria-selected="false">All</button>
     </div>
-    <div class="project-filter buttons has-addons" style="margin-bottom: 1rem;">
-      <button type="button" class="button is-small is-info is-selected" data-filter="selected">Selected Projects</button>
-      <button type="button" class="button is-small" data-filter="all">All Projects</button>
+    <div class="description" style="font-size: 0.9em;">
+      * denotes equal first authorship, <sup>†</sup> denotes equal advising
     </div>
+    <div class="spacer"></div>
     <!-- GLP -->
-    <div class="columns project-item" data-tags="selected">
+    <div class="columns project-item" id="generative-latent-prior" data-tags="selected">
       <div class="column is-2">
         <figure class="image">
           <img src="assets/projects/teasers/glp.png"></img>
@@ -74,9 +86,9 @@
       </div>
       <div class="column">
         <div class="is-size-6"><b>Learning a Generative Meta-Model of LLM Activations</b></div>
-        <b>Grace Luo</b>, Jiahai Feng, Trevor Darrell, Alec Radford, Jacob Steinhardt
+        <b>Grace Luo</b>, Jiahai Feng, Trevor Darrell<sup>†</sup>, Alec Radford<sup>†</sup>, Jacob Steinhardt<sup>†</sup>
         <br/>
-        arXiv 2026
+        ICML 2026
         <div class="project-links">
           <a href="https://arxiv.org/abs/2602.06964" target="_blank">
           paper
@@ -132,7 +144,7 @@
       </div>
       <div class="column">
         <div class="is-size-6"><b>Dual-Process Image Generation</b></div>
-        <b>Grace Luo</b>, Jonathan Granskog, Aleksander Holynski, Trevor Darrell
+        <b>Grace Luo</b>, Jonathan Granskog, Aleksander Holynski<sup>†</sup>, Trevor Darrell<sup>†</sup>
         <br/>
         ICCV 2025
         <div class="project-links">
@@ -210,7 +222,7 @@
     </div>
     <!-- Readout Guidance -->
     <!-- Diffusion Hyperfeatures -->
-    <div class="columns project-item" data-tags="selected">
+    <div class="columns project-item" id="diffusion-hyperfeatures" data-tags="selected">
       <div class="column is-2">
         <figure class="image">
           <img src="assets/projects/teasers/dhf.png"></img>
@@ -218,7 +230,8 @@
       </div>
       <div class="column">
         <div class="is-size-6"><b>Diffusion Hyperfeatures: Searching Through Time and Space for Semantic Correspondence</b></div>
-        <b>Grace Luo</b>, Lisa Dunlap, Dong Huk Park, Aleksander Holynski, Trevor Darrell
+        <b>Grace Luo</b>, Lisa Dunlap, Dong Huk Park<sup>†</sup>, Aleksander Holynski<sup>†</sup>, Trevor Darrell<sup>†</sup>
+  
         <br/>
         NeurIPS 2023
         <div class="project-links">
@@ -362,11 +375,11 @@
         <span class="has-text-grey-light">(Summer '23 - Spring '24)</span>
       </li>
       <li>
-        <a href="https://www.descript.com/lyrebird" target="_blank">Lyrebird / Descript</a>: Research Intern 
+        <a href="https://www.descript.com/lyrebird" target="_blank">Descript - Lyrebird Team</a>: Research Intern 
         <span class="has-text-grey-light">(Summer '22)</span>
       </li>
       <li>
-        <a href="https://cloud.google.com/vertex-ai?hl=en" target="_blank">Google Cloud</a>: 
+        <a href="https://cloud.google.com/vertex-ai?hl=en" target="_blank">Google Cloud - Vertex AI Team</a>: 
         Software Engineering Intern 
         <span class="has-text-grey-light">(Summer '21)</span>
       </li>
@@ -374,16 +387,6 @@
     <br>
     <div class="is-size-5"><b>Other Experience</b></div>
     <ul>
-      <li>
-        Open Source Investigations Contributor <span class="has-text-grey-light">(Fall '21 - Spring '22)</span>
-        <br>
-        <div class="fun-fact-container">
-          <span class="fun-fact-arrow">&#10551;</span>
-          <div class="fun-fact-text is-size-7">
-            I contributed to <a href="https://journalism.berkeley.edu/projects/us-expelled-haitians-fuel-charter-business-to-latin-america" target="_blank">this article on charter flights</a> as part of a seminar with the <a href="https://journalism.berkeley.edu/programs/mj/investigative-reporting" target="_blank">Berkeley Investigative Reporting Program</a>! I was the sole technical member and had a lot of fun building custom data scrapers.
-          </div>
-        </div>
-      </li>
       <li>
         <a href="https://asuc.org/appointed-officials-2020/" target="_blank">
         ASUC Student Government</a>: Chief Technology Officer 
@@ -424,16 +427,27 @@
 
 <script>
 (function () {
-  var filterButtons = document.querySelectorAll('.project-filter [data-filter]');
+  var toggle = document.querySelector('.project-toggle');
+  var filterButtons = document.querySelectorAll('.project-toggle-option');
+  var thumb = document.querySelector('.project-toggle-thumb');
   var projectItems = document.querySelectorAll('.project-item');
-  if (!filterButtons.length || !projectItems.length) return;
+  if (!toggle || !filterButtons.length || !projectItems.length) return;
+
+  function updateThumb(activeBtn) {
+    if (!thumb || !activeBtn) return;
+    thumb.style.width = activeBtn.offsetWidth + 'px';
+    thumb.style.transform = 'translateX(' + activeBtn.offsetLeft + 'px)';
+  }
 
   function applyFilter(filter) {
+    var activeBtn = null;
     filterButtons.forEach(function (btn) {
       var isActive = btn.getAttribute('data-filter') === filter;
-      btn.classList.toggle('is-info', isActive);
-      btn.classList.toggle('is-selected', isActive);
+      btn.classList.toggle('is-active', isActive);
+      btn.setAttribute('aria-selected', isActive ? 'true' : 'false');
+      if (isActive) activeBtn = btn;
     });
+    updateThumb(activeBtn);
     projectItems.forEach(function (item) {
       var tags = (item.getAttribute('data-tags') || '').trim();
       var hasSelected = tags.split(/\s+/).indexOf('selected') >= 0;
@@ -452,6 +466,10 @@
   });
 
   applyFilter('selected');
+  window.addEventListener('resize', function () {
+    var active = document.querySelector('.project-toggle-option.is-active');
+    updateThumb(active);
+  });
 })();
 </script>
 

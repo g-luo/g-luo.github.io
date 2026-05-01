@@ -1,5 +1,10 @@
 body {
-  font-family: 'Noto Sans', sans-serif !important;
+  font-family: "Libre Franklin", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+  color: #1f2937;
+}
+
+sup {
+  font-size: 0.7em;
 }
 
 a {
@@ -26,8 +31,58 @@ img,video {
   display: block;
 }
 
+@media (max-width: 768px) {
+  img, video {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .project-item .column.is-2 {
+    text-align: center;
+  }
+
+  .project-item .image {
+    display: inline-block;
+    max-width: 200px;
+    width: 100%;
+  }
+
+  .profile-links {
+    justify-content: center;
+  }
+}
+
 .app-container {
   max-width: min(80%, 720px);
+}
+
+.profile-links {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 14px;
+}
+
+.profile-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #628ea7 !important;
+  transition:
+    transform 0.25s cubic-bezier(0.68, -0.4, 0.265, 1.4),
+    color 0.2s ease;
+}
+
+.profile-links a:hover {
+  color: #f8b364 !important;
+  transform: translateY(-2px) rotate(-6deg);
+}
+
+.profile-links svg {
+  width: 20px;
+  height: 20px;
+  display: block;
+  fill: currentColor;
 }
 
 .spacer {
@@ -41,53 +96,102 @@ img,video {
 .project-links {
 }
 
-.project-filter .button {
-  font-family: 'Noto Sans', sans-serif !important;
-  font-size: 0.8rem;
-  border-radius: 4px;
-  border-color: #628ea7;
+.project-toggle {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  padding: 2px;
+  margin: 0.2em 0 0.5em;
+  background-color: #f1f1ee;
+  border-radius: 14px;
+  font-family: "Libre Franklin", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
-.project-filter .button:focus,
-.project-filter .button:active,
-.project-filter .button.is-info:focus,
-.project-filter .button.is-info.is-focused,
-.project-filter .button.is-selected:focus,
-.project-filter .button.is-selected:active,
-.project-filter .button:focus:not(:active),
-.project-filter .button.is-info:focus:not(:active) {
-  outline: none !important;
-  box-shadow: none !important;
-}
-
-.project-filter .button.is-selected,
-.project-filter .button.is-info {
+.project-toggle-thumb {
+  position: absolute;
+  top: 3px;
+  bottom: 3px;
+  left: 0;
   background-color: #628ea7;
-  border-color: #628ea7;
+  border-radius: 12px;
+  transform: translateX(0);
+  transition: transform 0.25s ease, width 0.25s ease;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.project-toggle-option {
+  position: relative;
+  z-index: 1;
+  appearance: none;
+  border: none;
+  background: transparent;
+  font: inherit;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  padding: 5px 14px;
+  border-radius: 12px;
+  color: #6b7280;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.project-toggle-option:focus {
+  outline: none;
+}
+
+.project-toggle-option:hover:not(.is-active) {
+  color: #1f2937;
+}
+
+.project-toggle-option.is-active {
   color: #fff;
-}
-
-.project-filter .button.is-selected:hover,
-.project-filter .button.is-info:hover {
-  background-color: #547a94;
-  border-color: #547a94;
-  color: #fff;
-}
-
-.project-filter .button:not(.is-selected):not(.is-info) {
-  background-color: transparent;
-  color: #628ea7;
-}
-
-.project-filter .button:not(.is-selected):not(.is-info):hover {
-  background-color: rgba(98, 142, 167, 0.1);
-  color: #628ea7;
 }
 
 .project-item[style*="display: none"] {
   margin: 0;
   padding: 0;
   overflow: hidden;
+}
+
+.project-item .image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 3px;
+  box-shadow: 0 0 0 1px rgba(98, 142, 167, 0);
+  transition: box-shadow 0.3s ease;
+}
+
+.project-item .image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.45) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-20deg);
+  pointer-events: none;
+  transition: none;
+}
+
+.project-item:hover .image {
+  box-shadow: 0 0 0 2px rgba(98, 142, 167, 0.55);
+}
+
+.project-item:hover .image::after {
+  left: 125%;
+  transition: left 0.7s ease;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 #research {
